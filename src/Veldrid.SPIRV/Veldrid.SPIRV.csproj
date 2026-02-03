@@ -36,6 +36,11 @@
             <PackagePath>runtimes/osx/native</PackagePath>
             <Pack>true</Pack>
         </Content>
+        <Content Include="$(MSBuildThisFileDirectory)runtimes\win-x64\native\libveldrid-spirv.dll">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <PackagePath>runtimes/win-x64/native</PackagePath>
+            <Pack>true</Pack>
+        </Content>
     </ItemGroup>
 
   <Target Name="BeforePackage" BeforeTargets="AssignTargetPaths">
